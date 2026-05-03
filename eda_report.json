@@ -1,0 +1,29 @@
+{
+  "total_raw_files": 26179,
+  "corrupt_files": 0,
+  "duplicate_files": 0,
+  "clean_files": 26179,
+  "class_counts": {
+    "elephant": 1446,
+    "cat": 1668,
+    "sheep": 1820,
+    "squirrel": 1862,
+    "cow": 1866,
+    "butterfly": 2112,
+    "horse": 2623,
+    "chicken": 3098,
+    "spider": 4821,
+    "dog": 4863
+  },
+  "imbalance_ratio": 3.363,
+  "median_width": 300,
+  "median_height": 225,
+  "decisions": {
+    "WeightedRandomSampler": "Applied \u2014 imbalance ratio is 3.36x (threshold 1.5x). Largest: dog (4863), Smallest: elephant (1446)",
+    "ClassWeightedLoss": "Applied \u2014 reinforces sampler, penalises errors on minority classes more",
+    "CorruptFilter": "Applied \u2014 0 corrupt files removed before training",
+    "DuplicateRemoval": "Applied \u2014 0 duplicates removed (MD5 hash)",
+    "ResizeTo224": "Applied \u2014 raw sizes vary from 60 to 6720px width; EfficientNet-B3 requires 224\u00d7224",
+    "HeavyAugmentation": "Applied \u2014 high size variance and real-world photo variation requires strong augmentation to generalise"
+  }
+}
